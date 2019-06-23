@@ -1,0 +1,6 @@
+" extra vim settings outside of haskell vim now control
+
+" Configure matchit so that it goes from opening tag to closing tag
+au FileType html,eruby,rb,css,js,xml runtime! macros/matchit.vim
+
+set clipboard=unnamed

@@ -1,0 +1,36 @@
+# local user settings on macos x
+
+eval `/usr/libexec/path_helper -s`
+
+export JAVA_HOME="/Library/Java/Home"
+export MAVEN_OPTS="-Xmx1500M -XX:MaxPermSize=512M"
+
+# export MANPATH="/usr/local/man:$MANPATH"
+SB_HOME="/Applications/Sublime Text.app/Contents/SharedSupport"
+export PATH="$HOME/bin:$JAVA_HOME/bin:$HOME/Library/Haskell/bin:/usr/local/bin:$SB_HOME/bin:$PATH"
+
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
