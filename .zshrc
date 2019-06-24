@@ -117,10 +117,10 @@ if [ $? -eq 0 ]; then
   if [ -f $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
     alias stack="stack --nix"
   fi
-fi
 
-STACK_BIN=`stack path --compiler-bin`
-export PATH="$PATH:$STACK_BIN"
+  STACK_BIN=`stack path --compiler-bin`
+  export PATH="$PATH:$STACK_BIN"
+fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
