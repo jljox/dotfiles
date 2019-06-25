@@ -95,6 +95,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cls=clear
+alias history='history -E'
 
 OS_NAME=`uname`
 source $HOME/dotfiles/.zshrc.$OS_NAME
