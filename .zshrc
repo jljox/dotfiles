@@ -66,7 +66,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker cabal vi-mode npm)
+plugins=(git docker docker-compose cabal vi-mode npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,6 +117,17 @@ if [ $? -eq 0 ]; then
 
   STACK_BIN=`stack path --compiler-bin`
   export PATH="$PATH:$STACK_BIN"
+fi
+
+# bloop
+BLOOP_HOME=$HOME/.bloop
+if [ -d $BLOOP_HOME ]; then
+  
+  autoload -U compinit
+  fpath=($BLOOP_HOME/zsh $fpath)
+  compinit
+
+  export PATH="$PATH:$BLOOP_HOME"
 fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
