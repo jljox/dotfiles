@@ -130,6 +130,20 @@ if [ -d $BLOOP_HOME ]; then
   export PATH="$PATH:$BLOOP_HOME"
 fi
 
+# sbt
+SBT_HOME="$HOME/local/sbt/current"
+if [ -d $SBT_HOME ]; then
+  export PATH="$PATH:$SBT_HOME/bin"
+fi
+
+# scala
+SCALA_HOME="$HOME/local/scala/current"
+if [ -d $SCALA_HOME ]; then
+  export PATH="$PATH:$SCALA_HOME/bin"
+fi
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+SDKMAN_DIR="$HOME/.sdkman"
+if [ -d $SDKMAN_DIR ]; then
+  [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+fi

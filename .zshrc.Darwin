@@ -2,7 +2,7 @@
 
 eval `/usr/libexec/path_helper -s`
 
-export JAVA_HOME="/Library/Java/Home"
+export JAVA_HOME="/$HOME/local/jdk/current"
 export MAVEN_OPTS="-Xmx1500M -XX:MaxPermSize=512M"
 
 # export MANPATH="/usr/local/man:$MANPATH"
