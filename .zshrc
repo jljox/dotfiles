@@ -66,7 +66,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose cabal vi-mode npm)
+plugins=(git docker docker-compose cabal vi-mode npm nvm yarn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -141,6 +141,9 @@ SCALA_HOME="$HOME/local/scala/current"
 if [ -d $SCALA_HOME ]; then
   export PATH="$PATH:$SCALA_HOME/bin"
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 SDKMAN_DIR="$HOME/.sdkman"
