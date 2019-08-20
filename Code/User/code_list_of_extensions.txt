@@ -1,0 +1,9 @@
+alefragnani.Bookmarks
+CoenraadS.bracket-pair-colorizer-2
+dsznajder.es7-react-js-snippets
+esbenp.prettier-vscode
+scala-lang.scala
+scalameta.metals
+sdras.night-owl
+vscodevim.vim
+wix.vscode-import-cost
