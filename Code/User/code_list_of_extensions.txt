@@ -1,5 +1,6 @@
 alefragnani.Bookmarks
 CoenraadS.bracket-pair-colorizer-2
+dbaeumer.vscode-eslint
 dsznajder.es7-react-js-snippets
 esbenp.prettier-vscode
 ndmitchell.haskell-ghcid
