@@ -3,10 +3,12 @@ CoenraadS.bracket-pair-colorizer-2
 dbaeumer.vscode-eslint
 dsznajder.es7-react-js-snippets
 esbenp.prettier-vscode
+justusadam.language-haskell
 ms-python.python
 ndmitchell.haskell-ghcid
 scala-lang.scala
 scalameta.metals
 sdras.night-owl
+VisualStudioExptTeam.vscodeintellicode
 vscodevim.vim
 wix.vscode-import-cost

@@ -12,6 +12,9 @@ Local git repo after installation:
 
 ### ghc(i)
 
+## ghcid
+Use `ghcid` https://github.com/ndmitchell/ghcid/blob/master/README.md
+
 ### cabal nix style
 
 ### stackage
