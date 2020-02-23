@@ -19,3 +19,5 @@ if [ -L "$code_dirname/$code_settings_file" ]; then
   rm "$code_dirname/$code_settings_file"
 fi
 ln -s "$HOME/dotfiles/$code_settings_file" "$code_dirname/$code_settings_file"
+
+ln -s "$HOME/dotfiles/bin" "$HOME/bin"
