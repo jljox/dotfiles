@@ -150,3 +150,6 @@ SDKMAN_DIR="$HOME/.sdkman"
 if [ -d $SDKMAN_DIR ]; then
   [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
 fi
+
+# give rgit the same completion as git
+compdef rgit=git
