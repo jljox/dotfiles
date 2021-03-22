@@ -2,7 +2,7 @@
 
 # invokes git command in all git directories found
 
-GIT_DIRS=`find . -type d -name .git`
+GIT_DIRS=`find -L . -type d -name .git`
 wd=`pwd`
 for gitdir in $GIT_DIRS
 do
