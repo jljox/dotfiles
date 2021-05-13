@@ -66,7 +66,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(history git docker docker-compose cabal vi-mode npm nvm yarn mvn aws kubectl pod)
+plugins=(history git docker docker-compose cabal vi-mode npm nvm yarn mvn aws kubectl helm pod)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -155,7 +155,7 @@ fi
 compdef rgit=git
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f $HOME/google-cloud-sdk/path.zsh.inc ]; then . $HOME/google-cloud-sdk/path.zsh.inc; fi
+if [ -f '/Users/jljox/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jljox/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f $HOME/google-cloud-sdk/completion.zsh.inc ]; then . $HOME/google-cloud-sdk/completion.zsh.inc; fi
+if [ -f '/Users/jljox/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jljox/google-cloud-sdk/completion.zsh.inc'; fi
