@@ -3,7 +3,7 @@
 eval `/usr/libexec/path_helper -s`
 
 export JAVA_HOME="$HOME/local/jdk/current"
-export MAVEN_OPTS="-Xmx1500M -XX:MaxPermSize=512M"
+export MAVEN_OPTS="-Xss8m"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$HOME/bin:$HOME/Library/Haskell/bin:/usr/local/bin:$HOME/Library/Application Support/Coursier/bin:$PATH:$JAVA_HOME/bin"
