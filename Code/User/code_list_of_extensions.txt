@@ -4,8 +4,10 @@ dbaeumer.vscode-eslint
 dsznajder.es7-react-js-snippets
 esbenp.prettier-vscode
 justusadam.language-haskell
+k--kato.intellij-idea-keybindings
 ms-python.python
-ndmitchell.haskell-ghcid
+ms-python.vscode-pylance
+ms-toolsai.jupyter
 scala-lang.scala
 scalameta.metals
 sdras.night-owl
