@@ -6,14 +6,17 @@
     "git.allowForcePush": true,
     "editor.fontSize": 14,
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Visual Studio Light",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.jediEnabled": false,
     "python.languageServer": "Microsoft",
+    "workbench.editor.showTabs": true,
+    "workbench.colorTheme": "Solarized Light",
+    "terminal.integrated.shell.osx": "/bin/zsh",
     "files.watcherExclude": {
         "**/.bloop": true,
         "**/.metals": true,
         "**/.ammonite": true
-    }
+    },
+    "security.workspace.trust.untrustedFiles": "open"
 }
