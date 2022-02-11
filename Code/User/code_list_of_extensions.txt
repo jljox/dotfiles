@@ -1,5 +1,4 @@
 alefragnani.Bookmarks
-CoenraadS.bracket-pair-colorizer-2
 dbaeumer.vscode-eslint
 dsznajder.es7-react-js-snippets
 esbenp.prettier-vscode
@@ -8,9 +7,15 @@ k--kato.intellij-idea-keybindings
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
+redhat.java
 scala-lang.scala
 scalameta.metals
 sdras.night-owl
 VisualStudioExptTeam.vscodeintellicode
+vscjava.vscode-java-debug
+vscjava.vscode-java-dependency
+vscjava.vscode-java-pack
+vscjava.vscode-java-test
+vscjava.vscode-maven
 vscodevim.vim
 wix.vscode-import-cost
