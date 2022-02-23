@@ -169,3 +169,6 @@ if [ -f '/Users/jljox/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jljox/goo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/jljox/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jljox/google-cloud-sdk/completion.zsh.inc'; fi
+
+# homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
