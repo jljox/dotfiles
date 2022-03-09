@@ -71,7 +71,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(history git docker docker-compose cabal vi-mode npm nvm yarn mvn aws kubectl helm pod)
+plugins=(history git docker docker-compose cabal vi-mode npm yarn mvn aws kubectl helm pod gh)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -113,62 +113,15 @@ if [ -f $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
   source $HOME/.nix-profile/etc/profile.d/nix.sh
 fi
 
-# stack completions and nix
-$(which stack >/dev/null 2>&1)
-if [ $? -eq 0 ]; then
-  autoload -U +X compinit && compinit
-  autoload -U +X bashcompinit && bashcompinit
-  eval "$(stack --bash-completion-script "$(which stack)")"
-
-  # alias for stack on systems using nix package manager
-  if [ -f $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
-    alias stack="stack --nix"
-  fi
-
-  STACK_BIN=`stack path --compiler-bin`
-  export PATH="$PATH:$STACK_BIN"
-fi
-
-# bloop
-BLOOP_HOME=$HOME/.bloop
-if [ -d $BLOOP_HOME ]; then
-  
-  autoload -U compinit
-  fpath=($BLOOP_HOME/zsh $fpath)
-  compinit
-
-  export PATH="$PATH:$BLOOP_HOME"
-fi
-
-# sbt
-SBT_HOME="$HOME/local/sbt/current"
-if [ -d $SBT_HOME ]; then
-  export PATH="$PATH:$SBT_HOME/bin"
-fi
-
-# scala
-SCALA_HOME="$HOME/local/scala/current"
-if [ -d $SCALA_HOME ]; then
-  export PATH="$PATH:$SCALA_HOME/bin"
-fi
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-SDKMAN_DIR="$HOME/.sdkman"
-if [ -d $SDKMAN_DIR ]; then
-  [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
-fi
-
 # give rgit the same completion as git
 compdef rgit=git
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jljox/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jljox/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/jljox/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jljox/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
