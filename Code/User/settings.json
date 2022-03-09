@@ -1,29 +1,33 @@
 {
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.formatOnSave": true,
-    "git.allowForcePush": true,
-    "editor.fontSize": 14,
-    "window.zoomLevel": 1,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.jediEnabled": false,
-    "python.languageServer": "Microsoft",
-    "workbench.editor.showTabs": true,
-    "workbench.colorTheme": "Solarized Light",
-    "terminal.integrated.shell.osx": "/bin/zsh",
-    "files.watcherExclude": {
-        "**/.bloop": true,
-        "**/.metals": true,
-        "**/.ammonite": true
-    },
-    "security.workspace.trust.untrustedFiles": "open",
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    },
-    "redhat.telemetry.enabled": false
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "git.allowForcePush": true,
+  "editor.fontSize": 14,
+  "window.zoomLevel": 1,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false,
+  "python.languageServer": "Default",
+  "workbench.editor.showTabs": true,
+  "workbench.colorTheme": "Solarized Light",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "redhat.telemetry.enabled": false,
+  "workbench.editor.enablePreview": false,
+  "grunt.autoDetect": "on",
+  "gulp.autoDetect": "on",
+  "jake.autoDetect": "on"
 }
