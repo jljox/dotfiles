@@ -71,7 +71,23 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(history git docker docker-compose cabal vi-mode npm yarn mvn aws kubectl helm pod gh)
+plugins=(
+  history 
+  git 
+  docker 
+  docker-compose 
+  cabal 
+  vi-mode 
+  npm 
+  yarn 
+  mvn 
+  aws 
+  kubectl 
+  helm 
+  pod 
+  gh
+  sbt
+)
 
 source $ZSH/oh-my-zsh.sh
 
