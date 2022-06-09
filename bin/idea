@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  echo "See https://www.jetbrains.com/help/idea/working-with-the-ide-features-from-command-line.html#toolbox"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  open -na "IntelliJ IDEA.app" --args "$@"
+else
+  echo "$OSTYPE Not supported. See https://www.jetbrains.com/help/idea/working-with-the-ide-features-from-command-line.html" 
+fi
