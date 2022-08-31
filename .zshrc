@@ -87,7 +87,6 @@ plugins=(
   pod 
   gh
   sbt
-  nvm
 )
 
 source $ZSH/oh-my-zsh.sh
