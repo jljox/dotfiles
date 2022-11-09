@@ -87,12 +87,14 @@ plugins=(
   pod 
   gh
   sbt
+  volta
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH="$HOME/.local/bin:$PATH"
+VOLTA_HOME=$HOME/.volta
+export PATH="$HOME/.local/bin:$VOLTA_HOME/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
