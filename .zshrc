@@ -86,15 +86,12 @@ plugins=(
   helm 
   pod 
   gh
-  sbt
-  volta
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-VOLTA_HOME=$HOME/.volta
-export PATH="$HOME/.local/bin:$VOLTA_HOME/bin:$PATH"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -126,9 +123,6 @@ source $HOME/dotfiles/.zshrc.$OS_NAME
 
 if [ -f $HOME/etc/.not_source_controlled_rc ]; then
   source $HOME/etc/.not_source_controlled_rc
-fi
-if [ -f $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
-  source $HOME/.nix-profile/etc/profile.d/nix.sh
 fi
 
 # give rgit the same completion as git
